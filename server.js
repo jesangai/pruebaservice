@@ -4,7 +4,8 @@ var http = require('http'),
 
 const pg    = require('pg');
 pg.defaults.ssl = true;
-var conString = "postgres://hxpkljcmwxevkj:112a8f2fd3eb41a4d045e8b0a9c59a46f8012411bf2178a9b4a1be8b211b3b97@ec2-54-174-229-152.compute-1.amazonaws.com:5432/d3h1ng5ta8h5ph";
+var conString = "postgres://ulhzeqhwbfyneg:b2d7665294c45cf5f70716c2a1b5d0b76ce0f0fd2992379656f81efcc3b38908@ec2-23-21-91-183.compute-1.amazonaws.com:5432/d968u74t4o3tme
+";
 
 function crossDomain(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
