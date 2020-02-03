@@ -2,10 +2,9 @@ var http = require('http'),
 	express  = require('express'),
     bodyParser   = require('body-parser');
 
-const pg    = require('pg');
+const pg = require('pg');
 pg.defaults.ssl = true;
-var conString = "postgres://ulhzeqhwbfyneg:b2d7665294c45cf5f70716c2a1b5d0b76ce0f0fd2992379656f81efcc3b38908@ec2-23-21-91-183.compute-1.amazonaws.com:5432/d968u74t4o3tme
-";
+var conString = "postgres://ulhzeqhwbfyneg:b2d7665294c45cf5f70716c2a1b5d0b76ce0f0fd2992379656f81efcc3b38908@ec2-23-21-91-183.compute-1.amazonaws.com:5432/d968u74t4o3tme";
 
 function crossDomain(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
